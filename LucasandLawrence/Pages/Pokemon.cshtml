@@ -1,0 +1,221 @@
+﻿@page
+@model PokemonModel
+@{
+    ViewData["Title"] = "Pokemon";
+}
+
+
+<header style="font-weight:bold;text-align:center;font-size:x-large">Pokemon</header>
+<table id="PokemonTable">
+    <thead id="PokemonHeader">
+        <tr>
+            <th><span style="color:blue">Image</span></th>
+            <th><span>Name</span></th>
+            <th><span style="color:cornflowerblue">Type</span></th>
+            <th><span style="color:green">HP</span></th>
+            <th><span style="color:darkred">Attack</span></th>
+            <th><span style="color:darkorange">Defense</span></th>
+            <th><span>Link</span></th>
+        </tr>
+    </thead>
+    <tbody id="PokemonBody">
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest/scale-to-width-down/200?cb=20140328190757" /></td>
+            <td>Bulbasaur</td>
+            <td>Grass/Poison</td>
+            <td>45</td>
+            <td>49</td>
+            <td>49</td>
+            <td><a>https://pokemon.fandom.com/wiki/Bulbasaur</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/b/b1/151Mew.png/revision/latest/scale-to-width-down/200?cb=20140328211459" /></td>
+            <td>Mew</td>
+            <td>Psychic</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td><a>https://pokemon.fandom.com/wiki/Mew</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/7/78/150Mewtwo.png/revision/latest/scale-to-width-down/200?cb=20140328211204" /></td>
+            <td>Mewtwo</td>
+            <td>Psychic</td>
+            <td>106</td>
+            <td>110</td>
+            <td>90</td>
+            <td><a>https://pokemon.fandom.com/wiki/Mewtwo</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest/scale-to-width-down/200?cb=20140724195345" /></td>
+            <td>Charmander</td>
+            <td>Fire</td>
+            <td>39</td>
+            <td>52</td>
+            <td>43</td>
+            <td><a>https://pokemon.fandom.com/wiki/Charmander</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest/scale-to-width-down/200?cb=20140328191525" /></td>
+            <td>Squirtle</td>
+            <td>Water</td>
+            <td>44</td>
+            <td>48</td>
+            <td>65</td>
+            <td><a>https://pokemon.fandom.com/wiki/Squirtle</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest/scale-to-width-down/200?cb=20140328192412" /></td>
+            <td>Pikachu</td>
+            <td>Electric</td>
+            <td>35</td>
+            <td>55</td>
+            <td>30</td>
+            <td><a>https://pokemon.fandom.com/wiki/Pikachu</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/e/e2/133Eevee.png/revision/latest/scale-to-width-down/200?cb=20140328210732" /></td>
+            <td>Eevee</td>
+            <td>Normal</td>
+            <td>55</td>
+            <td>55</td>
+            <td>50</td>
+            <td><a>https://pokemon.fandom.com/wiki/Eevee</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/7/74/722Rowlet.png/revision/latest/scale-to-width-down/200?cb=20161221213856" /></td>
+            <td>Rowlet</td>
+            <td>Grass/Flying</td>
+            <td>68</td>
+            <td>55</td>
+            <td>55</td>
+            <td><a>https://pokemon.fandom.com/wiki/Rowlet</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/0/0e/725Litten.png/revision/latest/scale-to-width-down/200?cb=20161221214147" /></td>
+            <td>Litten</td>
+            <td>Fire</td>
+            <td>45</td>
+            <td>65</td>
+            <td>40</td>
+            <td><a>https://pokemon.fandom.com/wiki/Litten</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/d/d8/728Popplio.png/revision/latest/scale-to-width-down/200?cb=20161221214152" /></td>
+            <td>Popplio</td>
+            <td>Water</td>
+            <td>50</td>
+            <td>54</td>
+            <td>54</td>
+            <td><a>https://pokemon.fandom.com/wiki/Popplio</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/b/b4/587Emolga.png/revision/latest/scale-to-width-down/200?cb=20140329051920" /></td>
+            <td>Emolga</td>
+            <td>Electric/Flying</td>
+            <td>55</td>
+            <td>75</td>
+            <td>60</td>
+            <td><a>https://pokemon.fandom.com/wiki/Emolga</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/0/0b/487Giratina.png/revision/latest/scale-to-width-down/200?cb=20140517143822" /></td>
+            <td>Giratina</td>
+            <td>Ghost/Dragon</td>
+            <td>150</td>
+            <td>100</td>
+            <td>120</td>
+            <td><a>https://pokemon.fandom.com/wiki/Giratina</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/3/3a/718Zygarde.png/revision/latest/scale-to-width-down/200?cb=20140329060158" /></td>
+            <td>Zygarde</td>
+            <td>Dragon/Ground</td>
+            <td>108</td>
+            <td>100</td>
+            <td>121</td>
+            <td><a>https://pokemon.fandom.com/wiki/Zygarde</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/5/54/717Yveltal.png/revision/latest/scale-to-width-down/200?cb=20140329060158" /></td>
+            <td>Yveltal</td>
+            <td>Dark/Flying</td>
+            <td>126</td>
+            <td>131</td>
+            <td>95</td>
+            <td><a>https://pokemon.fandom.com/wiki/Yveltal</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/4/44/249Lugia.png/revision/latest/scale-to-width-down/200?cb=20140329015839" /></td>
+            <td>Lugia</td>
+            <td>Psychic/Flying</td>
+            <td>106</td>
+            <td>90</td>
+            <td>130</td>
+            <td><a>https://pokemon.fandom.com/wiki/Lugia</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/e/e4/384Rayquaza.png/revision/latest/scale-to-width-down/200?cb=20151212184008" /></td>
+            <td>Rayquaza</td>
+            <td>Dragon/Flying</td>
+            <td>105</td>
+            <td>150</td>
+            <td>90</td>
+            <td><a>https://pokemon.fandom.com/wiki/Rayquaza</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/1/17/646AKyurem.png/revision/latest/scale-to-width-down/200?cb=20140329053830" /></td>
+            <td>Kyurem</td>
+            <td>Dragon/Ice</td>
+            <td>125</td>
+            <td>130</td>
+            <td>90</td>
+            <td><a>https://pokemon.fandom.com/wiki/Kyurem</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/1/13/716Xerneas.png/revision/latest/scale-to-width-down/200?cb=20140329060158" /></td>
+            <td>Xerneas</td>
+            <td>Fairy</td>
+            <td>126</td>
+            <td>131</td>
+            <td>95</td>
+            <td><a>https://pokemon.fandom.com/wiki/Xerneas</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/8/8a/483Dialga.png/revision/latest/scale-to-width-down/200?cb=20140329042325" /></td>
+            <td>Dialga</td>
+            <td>Steel/Dragon</td>
+            <td>100</td>
+            <td>120</td>
+            <td>120</td>
+            <td><a>https://pokemon.fandom.com/wiki/Dialga</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/9/9b/155Cyndaquil.png/revision/latest/scale-to-width-down/200?cb=20140329012506" /></td>
+            <td>Cyndaquil</td>
+            <td>Fire</td>
+            <td>39</td>
+            <td>52</td>
+            <td>43</td>
+            <td><a>https://pokemon.fandom.com/wiki/Cyndaquil</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://vignette.wikia.nocookie.net/pokemon/images/6/60/258Mudkip.png/revision/latest?cb=20140629190045" /></td>
+            <td>Mudkip</td>
+            <td>Warter</td>
+            <td>50</td>
+            <td>70</td>
+            <td>50</td>
+            <td><a>https://pokemon.fandom.com/wiki/Mudkip</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/635.png" /></td>
+            <td>Hydreigon</td>
+            <td>Dark/Dragon</td>
+            <td>150</td>
+            <td>50</td>
+            <td>40</td>
+            <td><a>https://www.pokemon.com/us/pokedex/hydreigon</a></td>
+        </tr>
+    </tbody>
+</table>
